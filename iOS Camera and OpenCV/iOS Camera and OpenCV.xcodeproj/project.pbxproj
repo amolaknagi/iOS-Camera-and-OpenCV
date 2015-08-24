@@ -12,7 +12,6 @@
 		D392F90F1B8BE00E009CEC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D392F90D1B8BE00E009CEC7C /* Main.storyboard */; };
 		D392F9111B8BE00E009CEC7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D392F9101B8BE00E009CEC7C /* Images.xcassets */; };
 		D392F9141B8BE00E009CEC7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D392F9121B8BE00E009CEC7C /* LaunchScreen.xib */; };
-		D392F9201B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F91F1B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m */; };
 		D392F92A1B8BE034009CEC7C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D392F9291B8BE034009CEC7C /* opencv2.framework */; };
 		D392F92D1B8BE0A9009CEC7C /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F92C1B8BE0A9009CEC7C /* OptionsTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -37,8 +36,6 @@
 		D392F9101B8BE00E009CEC7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D392F9131B8BE00E009CEC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D392F9191B8BE00E009CEC7C /* iOS Camera and OpenCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Camera and OpenCVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D392F91E1B8BE00E009CEC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D392F91F1B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Camera_and_OpenCVTests.m; sourceTree = "<group>"; };
 		D392F9291B8BE034009CEC7C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../../../OpenCV Files/ios/opencv2.framework"; sourceTree = "<group>"; };
 		D392F92B1B8BE0A9009CEC7C /* OptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableViewController.h; sourceTree = "<group>"; };
 		D392F92C1B8BE0A9009CEC7C /* OptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableViewController.m; sourceTree = "<group>"; };
@@ -68,7 +65,6 @@
 			children = (
 				D392F9291B8BE034009CEC7C /* opencv2.framework */,
 				D392F9021B8BE00E009CEC7C /* iOS Camera and OpenCV */,
-				D392F91C1B8BE00E009CEC7C /* iOS Camera and OpenCVTests */,
 				D392F9011B8BE00E009CEC7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,9 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				D392F92E1B8BE0B5009CEC7C /* OptionsTableViewController */,
-				D392F92F1B8BE0BF009CEC7C /* AppDelegate */,
 				D392F9301B8BE0F0009CEC7C /* Storyboard and Images */,
 				D392F9031B8BE00E009CEC7C /* Supporting Files */,
+				D392F92F1B8BE0BF009CEC7C /* AppDelegate */,
 			);
 			path = "iOS Camera and OpenCV";
 			sourceTree = "<group>";
@@ -98,23 +94,6 @@
 			children = (
 				D392F9041B8BE00E009CEC7C /* Info.plist */,
 				D392F9051B8BE00E009CEC7C /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D392F91C1B8BE00E009CEC7C /* iOS Camera and OpenCVTests */ = {
-			isa = PBXGroup;
-			children = (
-				D392F91F1B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m */,
-				D392F91D1B8BE00E009CEC7C /* Supporting Files */,
-			);
-			path = "iOS Camera and OpenCVTests";
-			sourceTree = "<group>";
-		};
-		D392F91D1B8BE00E009CEC7C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D392F91E1B8BE00E009CEC7C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,7 +236,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D392F9201B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,7 @@
     [super viewDidLoad];
     
     //Determine the pages in the application here
+    //Make sure the page names match the segue names!!!
     self.pages = @[@"First",
                    @"Second",
                    @"Third"];
@@ -84,6 +85,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NSString *segue = self.pages[indexPath.row];
+    
+    [self performSegueWithIdentifier:segue sender:nil];
 }
 
 
