@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D392F9061B8BE00E009CEC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F9051B8BE00E009CEC7C /* main.m */; };
+		D392F9091B8BE00E009CEC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F9081B8BE00E009CEC7C /* AppDelegate.m */; };
+		D392F90F1B8BE00E009CEC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D392F90D1B8BE00E009CEC7C /* Main.storyboard */; };
+		D392F9111B8BE00E009CEC7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D392F9101B8BE00E009CEC7C /* Images.xcassets */; };
+		D392F9141B8BE00E009CEC7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D392F9121B8BE00E009CEC7C /* LaunchScreen.xib */; };
+		D392F9201B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F91F1B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m */; };
+		D392F92A1B8BE034009CEC7C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D392F9291B8BE034009CEC7C /* opencv2.framework */; };
+		D392F92D1B8BE0A9009CEC7C /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F92C1B8BE0A9009CEC7C /* OptionsTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D392F91A1B8BE00E009CEC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D392F8F81B8BE00E009CEC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D392F8FF1B8BE00E009CEC7C;
+			remoteInfo = "iOS Camera and OpenCV";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D392F9001B8BE00E009CEC7C /* iOS Camera and OpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Camera and OpenCV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D392F9041B8BE00E009CEC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D392F9051B8BE00E009CEC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D392F9071B8BE00E009CEC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D392F9081B8BE00E009CEC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D392F90E1B8BE00E009CEC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D392F9101B8BE00E009CEC7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D392F9131B8BE00E009CEC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D392F9191B8BE00E009CEC7C /* iOS Camera and OpenCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Camera and OpenCVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D392F91E1B8BE00E009CEC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D392F91F1B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Camera_and_OpenCVTests.m; sourceTree = "<group>"; };
+		D392F9291B8BE034009CEC7C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../../../OpenCV Files/ios/opencv2.framework"; sourceTree = "<group>"; };
+		D392F92B1B8BE0A9009CEC7C /* OptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableViewController.h; sourceTree = "<group>"; };
+		D392F92C1B8BE0A9009CEC7C /* OptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D392F8FD1B8BE00E009CEC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D392F92A1B8BE034009CEC7C /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D392F9161B8BE00E009CEC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D392F8F71B8BE00E009CEC7C = {
+			isa = PBXGroup;
+			children = (
+				D392F9291B8BE034009CEC7C /* opencv2.framework */,
+				D392F9021B8BE00E009CEC7C /* iOS Camera and OpenCV */,
+				D392F91C1B8BE00E009CEC7C /* iOS Camera and OpenCVTests */,
+				D392F9011B8BE00E009CEC7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D392F9011B8BE00E009CEC7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D392F9001B8BE00E009CEC7C /* iOS Camera and OpenCV.app */,
+				D392F9191B8BE00E009CEC7C /* iOS Camera and OpenCVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D392F9021B8BE00E009CEC7C /* iOS Camera and OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				D392F92E1B8BE0B5009CEC7C /* OptionsTableViewController */,
+				D392F92F1B8BE0BF009CEC7C /* AppDelegate */,
+				D392F9301B8BE0F0009CEC7C /* Storyboard and Images */,
+				D392F9031B8BE00E009CEC7C /* Supporting Files */,
+			);
+			path = "iOS Camera and OpenCV";
+			sourceTree = "<group>";
+		};
+		D392F9031B8BE00E009CEC7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D392F9041B8BE00E009CEC7C /* Info.plist */,
+				D392F9051B8BE00E009CEC7C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D392F91C1B8BE00E009CEC7C /* iOS Camera and OpenCVTests */ = {
+			isa = PBXGroup;
+			children = (
+				D392F91F1B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m */,
+				D392F91D1B8BE00E009CEC7C /* Supporting Files */,
+			);
+			path = "iOS Camera and OpenCVTests";
+			sourceTree = "<group>";
+		};
+		D392F91D1B8BE00E009CEC7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D392F91E1B8BE00E009CEC7C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D392F92E1B8BE0B5009CEC7C /* OptionsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D392F92B1B8BE0A9009CEC7C /* OptionsTableViewController.h */,
+				D392F92C1B8BE0A9009CEC7C /* OptionsTableViewController.m */,
+			);
+			name = OptionsTableViewController;
+			sourceTree = "<group>";
+		};
+		D392F92F1B8BE0BF009CEC7C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D392F9071B8BE00E009CEC7C /* AppDelegate.h */,
+				D392F9081B8BE00E009CEC7C /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D392F9301B8BE0F0009CEC7C /* Storyboard and Images */ = {
+			isa = PBXGroup;
+			children = (
+				D392F90D1B8BE00E009CEC7C /* Main.storyboard */,
+				D392F9101B8BE00E009CEC7C /* Images.xcassets */,
+				D392F9121B8BE00E009CEC7C /* LaunchScreen.xib */,
+			);
+			name = "Storyboard and Images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D392F8FF1B8BE00E009CEC7C /* iOS Camera and OpenCV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D392F9231B8BE00E009CEC7C /* Build configuration list for PBXNativeTarget "iOS Camera and OpenCV" */;
+			buildPhases = (
+				D392F8FC1B8BE00E009CEC7C /* Sources */,
+				D392F8FD1B8BE00E009CEC7C /* Frameworks */,
+				D392F8FE1B8BE00E009CEC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Camera and OpenCV";
+			productName = "iOS Camera and OpenCV";
+			productReference = D392F9001B8BE00E009CEC7C /* iOS Camera and OpenCV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D392F9181B8BE00E009CEC7C /* iOS Camera and OpenCVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D392F9261B8BE00E009CEC7C /* Build configuration list for PBXNativeTarget "iOS Camera and OpenCVTests" */;
+			buildPhases = (
+				D392F9151B8BE00E009CEC7C /* Sources */,
+				D392F9161B8BE00E009CEC7C /* Frameworks */,
+				D392F9171B8BE00E009CEC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D392F91B1B8BE00E009CEC7C /* PBXTargetDependency */,
+			);
+			name = "iOS Camera and OpenCVTests";
+			productName = "iOS Camera and OpenCVTests";
+			productReference = D392F9191B8BE00E009CEC7C /* iOS Camera and OpenCVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D392F8F81B8BE00E009CEC7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Amolak Nagi";
+				TargetAttributes = {
+					D392F8FF1B8BE00E009CEC7C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D392F9181B8BE00E009CEC7C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D392F8FF1B8BE00E009CEC7C;
+					};
+				};
+			};
+			buildConfigurationList = D392F8FB1B8BE00E009CEC7C /* Build configuration list for PBXProject "iOS Camera and OpenCV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D392F8F71B8BE00E009CEC7C;
+			productRefGroup = D392F9011B8BE00E009CEC7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D392F8FF1B8BE00E009CEC7C /* iOS Camera and OpenCV */,
+				D392F9181B8BE00E009CEC7C /* iOS Camera and OpenCVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D392F8FE1B8BE00E009CEC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D392F90F1B8BE00E009CEC7C /* Main.storyboard in Resources */,
+				D392F9141B8BE00E009CEC7C /* LaunchScreen.xib in Resources */,
+				D392F9111B8BE00E009CEC7C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D392F9171B8BE00E009CEC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D392F8FC1B8BE00E009CEC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D392F9091B8BE00E009CEC7C /* AppDelegate.m in Sources */,
+				D392F92D1B8BE0A9009CEC7C /* OptionsTableViewController.m in Sources */,
+				D392F9061B8BE00E009CEC7C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D392F9151B8BE00E009CEC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D392F9201B8BE00E009CEC7C /* iOS_Camera_and_OpenCVTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D392F91B1B8BE00E009CEC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D392F8FF1B8BE00E009CEC7C /* iOS Camera and OpenCV */;
+			targetProxy = D392F91A1B8BE00E009CEC7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D392F90D1B8BE00E009CEC7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D392F90E1B8BE00E009CEC7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D392F9121B8BE00E009CEC7C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D392F9131B8BE00E009CEC7C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D392F9211B8BE00E009CEC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D392F9221B8BE00E009CEC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D392F9241B8BE00E009CEC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cmu/Documents/OpenCV,
+					Files/ios,
+				);
+				INFOPLIST_FILE = "iOS Camera and OpenCV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D392F9251B8BE00E009CEC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cmu/Documents/OpenCV,
+					Files/ios,
+				);
+				INFOPLIST_FILE = "iOS Camera and OpenCV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D392F9271B8BE00E009CEC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS Camera and OpenCVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Camera and OpenCV.app/iOS Camera and OpenCV";
+			};
+			name = Debug;
+		};
+		D392F9281B8BE00E009CEC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS Camera and OpenCVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Camera and OpenCV.app/iOS Camera and OpenCV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D392F8FB1B8BE00E009CEC7C /* Build configuration list for PBXProject "iOS Camera and OpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D392F9211B8BE00E009CEC7C /* Debug */,
+				D392F9221B8BE00E009CEC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D392F9231B8BE00E009CEC7C /* Build configuration list for PBXNativeTarget "iOS Camera and OpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D392F9241B8BE00E009CEC7C /* Debug */,
+				D392F9251B8BE00E009CEC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D392F9261B8BE00E009CEC7C /* Build configuration list for PBXNativeTarget "iOS Camera and OpenCVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D392F9271B8BE00E009CEC7C /* Debug */,
+				D392F9281B8BE00E009CEC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D392F8F81B8BE00E009CEC7C /* Project object */;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9568A54A-B458-4CEA-8231-D97DABB6F276</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS Camera and OpenCV</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E9DF830573E92B821A5A4ADFBB57E2B548CE73A4</key>
+		<string>https://github.com/amolaks76/iOS-Camera-and-OpenCV.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS Camera and OpenCV/iOS Camera and OpenCV.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E9DF830573E92B821A5A4ADFBB57E2B548CE73A4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/amolaks76/iOS-Camera-and-OpenCV.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E9DF830573E92B821A5A4ADFBB57E2B548CE73A4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E9DF830573E92B821A5A4ADFBB57E2B548CE73A4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Camera-and-OpenCV</string>
+		</dict>
+	</array>
+</dict>
+</plist>
