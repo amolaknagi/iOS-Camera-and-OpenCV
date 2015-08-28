@@ -26,7 +26,8 @@
     
     //Determine the pages in the application here
     //Make sure the page names match the segue names!!!
-    self.pages = @[@"UIImagePickerController Basics"];
+    self.pages = @[@"UIImagePickerController Photos",
+                   @"UIImagePickerController Videos"];
 }
 
 

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Amolak Nagi. All rights reserved.
 //
 
-#import "UIImagePickerBasicViewController.h"
+#import "UIImagePickerPhotosViewController.h"
 
-@interface UIImagePickerBasicViewController ()
+@interface UIImagePickerPhotosViewController ()
 
 //View Elements
 @property (weak, nonatomic) IBOutlet UIImageView *cameraImage;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation UIImagePickerBasicViewController
+@implementation UIImagePickerPhotosViewController
 
 #pragma mark - View Initialization
 
@@ -69,6 +69,22 @@
 //Raise the modal view to take a picture
 - (IBAction)takePicture:(id)sender
 {
+    
+    //Raise an alert if there's no camera available
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+    {
+        NSLog(@"No camera available");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry!"
+                                                        message:@"There's no camera to take a picture!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+    }
+    
+    NSLog(@"Camera available");
+    
     //Create the UIImagePickerController
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
 

@@ -20,17 +20,102 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Camera and OpenCV" id="LVu-xB-rCD"/>
                     <connections>
-                        <segue destination="an2-Uy-exe" kind="show" identifier="UIImagePickerController Basics" id="ngE-Bg-nSp"/>
+                        <segue destination="an2-Uy-exe" kind="show" identifier="UIImagePickerController Photos" id="ngE-Bg-nSp"/>
+                        <segue destination="Mxh-cb-9Z0" kind="show" identifier="UIImagePickerController Videos" id="9vp-nd-AWu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWz-Pt-Jrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="798" y="457"/>
         </scene>
-        <!--UIImagePickerController Basics-->
+        <!--UIImagePickerController Videos-->
+        <scene sceneID="dwu-OB-hWy">
+            <objects>
+                <viewController id="Mxh-cb-9Z0" customClass="UIImagePickerVideosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mfp-fy-eUH"/>
+                        <viewControllerLayoutGuide type="bottom" id="N0b-iq-wCo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S0d-Om-Dc4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-xt-k4M">
+                                <rect key="frame" x="50" y="30" width="500" height="356"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRe-d8-3Vm">
+                                <rect key="frame" x="275" y="416" width="50" height="30"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButtonPressed:" destination="Mxh-cb-9Z0" eventType="touchUpInside" id="1fG-hn-IiW"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gRc-TE-FCI">
+                                <rect key="frame" x="267" y="476" width="67" height="29"/>
+                                <segments>
+                                    <segment title="SD"/>
+                                    <segment title="HD"/>
+                                </segments>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="qualitySettingPressed:" destination="Mxh-cb-9Z0" eventType="valueChanged" id="iiN-JJ-nT4"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o9Q-fV-hJd">
+                                <rect key="frame" x="50" y="446" width="51" height="31"/>
+                                <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="flashSwitchPressed:" destination="Mxh-cb-9Z0" eventType="valueChanged" id="rBL-1y-srN"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Flash" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrt-mV-Grp">
+                                <rect key="frame" x="43" y="480" width="64" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="GT6-3X-9HM"/>
+                                    <constraint firstAttribute="width" constant="64" id="HeG-Hv-JnB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mx6-xt-k4M" firstAttribute="top" secondItem="S0d-Om-Dc4" secondAttribute="top" constant="30" id="7tw-CK-oAg"/>
+                            <constraint firstAttribute="centerX" secondItem="TRe-d8-3Vm" secondAttribute="centerX" id="FUa-jy-GdS"/>
+                            <constraint firstAttribute="bottom" secondItem="Mx6-xt-k4M" secondAttribute="bottom" constant="150" id="FpG-s3-GAf"/>
+                            <constraint firstItem="gRc-TE-FCI" firstAttribute="top" secondItem="TRe-d8-3Vm" secondAttribute="bottom" constant="30" id="GGU-v1-qhe"/>
+                            <constraint firstItem="mrt-mV-Grp" firstAttribute="top" secondItem="o9Q-fV-hJd" secondAttribute="bottom" constant="3" id="HpX-1C-xW2"/>
+                            <constraint firstItem="o9Q-fV-hJd" firstAttribute="top" secondItem="Mx6-xt-k4M" secondAttribute="bottom" constant="60" id="JXK-wj-WVG"/>
+                            <constraint firstAttribute="centerX" secondItem="gRc-TE-FCI" secondAttribute="centerX" id="O2r-NP-8eo"/>
+                            <constraint firstItem="TRe-d8-3Vm" firstAttribute="top" secondItem="Mx6-xt-k4M" secondAttribute="bottom" constant="30" id="PGF-Lg-ejS"/>
+                            <constraint firstItem="Mx6-xt-k4M" firstAttribute="leading" secondItem="S0d-Om-Dc4" secondAttribute="leading" constant="50" id="Z7T-yE-PlZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Mx6-xt-k4M" secondAttribute="trailing" constant="50" id="bof-sT-hXL"/>
+                            <constraint firstItem="mrt-mV-Grp" firstAttribute="centerX" secondItem="o9Q-fV-hJd" secondAttribute="centerX" id="fFx-ix-Y0q"/>
+                            <constraint firstItem="o9Q-fV-hJd" firstAttribute="leading" secondItem="Mx6-xt-k4M" secondAttribute="leading" id="zV0-7a-fLU"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="UIImagePickerController Videos" id="Zl0-Rj-aRS"/>
+                    <connections>
+                        <outlet property="cameraOverlayView" destination="Mx6-xt-k4M" id="kA7-0W-qGg"/>
+                        <outlet property="flashSwitch" destination="o9Q-fV-hJd" id="WfE-GU-JBy"/>
+                        <outlet property="qualitySetting" destination="gRc-TE-FCI" id="mKp-ik-xGN"/>
+                        <outlet property="recordButton" destination="TRe-d8-3Vm" id="0sO-40-EsC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJ3-uZ-Jl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="1315"/>
+        </scene>
+        <!--UIImagePickerController Photos-->
         <scene sceneID="zC5-07-Df2">
             <objects>
-                <viewController id="an2-Uy-exe" customClass="UIImagePickerBasicViewController" sceneMemberID="viewController">
+                <viewController id="an2-Uy-exe" customClass="UIImagePickerPhotosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qof-pj-O37"/>
                         <viewControllerLayoutGuide type="bottom" id="sZk-8r-JMa"/>
@@ -83,7 +168,7 @@
                                     <constraint firstAttribute="height" constant="36" id="VyW-Vc-JXE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ljG-6G-QZB" userLabel="selfieSwitch">
@@ -100,7 +185,7 @@
                                     <constraint firstAttribute="height" constant="36" id="zxa-Uj-gza"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -126,7 +211,7 @@
                             <constraint firstItem="Yhb-Tp-ECM" firstAttribute="leading" secondItem="qxk-Gi-6Z5" secondAttribute="leading" constant="50" id="vW3-dV-VGE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="UIImagePickerController Basics" id="rxO-eA-HtO"/>
+                    <navigationItem key="navigationItem" title="UIImagePickerController Photos" id="rxO-eA-HtO"/>
                     <connections>
                         <outlet property="cameraImage" destination="Yhb-Tp-ECM" id="9Rl-EC-4o4"/>
                         <outlet property="editSwitch" destination="MEJ-ZZ-Viu" id="29T-jJ-TT7"/>
