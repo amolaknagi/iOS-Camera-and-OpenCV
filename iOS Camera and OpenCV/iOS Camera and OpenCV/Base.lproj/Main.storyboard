@@ -76,8 +76,8 @@
                                     <action selector="editSwitchPressed:" destination="an2-Uy-exe" eventType="valueChanged" id="ZmQ-eq-uCg"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Allow Editing" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gd-jN-fsA">
-                                <rect key="frame" x="24" y="544" width="64" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Editing" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gd-jN-fsA">
+                                <rect key="frame" x="43" y="544" width="64" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="Ar1-nr-heJ"/>
                                     <constraint firstAttribute="height" constant="36" id="VyW-Vc-JXE"/>
@@ -86,15 +86,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ljG-6G-QZB">
+                                <rect key="frame" x="501" y="510" width="51" height="31"/>
+                                <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="selfieSwitchPressed:" destination="an2-Uy-exe" eventType="valueChanged" id="NKp-46-p9y"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selfie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ht-FD-UnH">
+                                <rect key="frame" x="493" y="544" width="64" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="KkI-Un-bkb"/>
+                                    <constraint firstAttribute="height" constant="36" id="zxa-Uj-gza"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sZk-8r-JMa" firstAttribute="top" secondItem="ljG-6G-QZB" secondAttribute="bottom" constant="59" id="1PW-TE-bw5"/>
+                            <constraint firstItem="ljG-6G-QZB" firstAttribute="top" secondItem="Yhb-Tp-ECM" secondAttribute="bottom" constant="60" id="1VV-ze-SBA"/>
+                            <constraint firstItem="Yhb-Tp-ECM" firstAttribute="trailing" secondItem="ljG-6G-QZB" secondAttribute="trailing" id="8ZA-yd-FpY"/>
+                            <constraint firstItem="2ht-FD-UnH" firstAttribute="top" secondItem="ljG-6G-QZB" secondAttribute="bottom" constant="3" id="8nP-4g-ZkA"/>
                             <constraint firstItem="6Gd-jN-fsA" firstAttribute="top" secondItem="MEJ-ZZ-Viu" secondAttribute="bottom" constant="3" id="9ji-Oh-hbi"/>
                             <constraint firstItem="Yhb-Tp-ECM" firstAttribute="top" secondItem="Qof-pj-O37" secondAttribute="bottom" constant="30" id="Aec-5i-ugH"/>
                             <constraint firstItem="PYw-wf-ciE" firstAttribute="top" secondItem="mqx-1t-Fs5" secondAttribute="bottom" constant="30" id="DrU-LQ-4e5"/>
                             <constraint firstItem="sZk-8r-JMa" firstAttribute="top" secondItem="MEJ-ZZ-Viu" secondAttribute="bottom" constant="59" id="SAw-Tb-zLX"/>
                             <constraint firstAttribute="centerX" secondItem="PYw-wf-ciE" secondAttribute="centerX" id="bMG-hJ-k1X"/>
                             <constraint firstAttribute="trailing" secondItem="Yhb-Tp-ECM" secondAttribute="trailing" constant="50" id="g60-Mb-bPM"/>
+                            <constraint firstItem="ljG-6G-QZB" firstAttribute="centerX" secondItem="2ht-FD-UnH" secondAttribute="centerX" id="gwI-Q5-g9K"/>
                             <constraint firstItem="MEJ-ZZ-Viu" firstAttribute="centerX" secondItem="6Gd-jN-fsA" secondAttribute="centerX" id="iLZ-sV-qTO"/>
                             <constraint firstItem="Yhb-Tp-ECM" firstAttribute="leading" secondItem="MEJ-ZZ-Viu" secondAttribute="leading" id="pdJ-c1-w1n"/>
                             <constraint firstItem="sZk-8r-JMa" firstAttribute="top" secondItem="PYw-wf-ciE" secondAttribute="bottom" constant="30" id="pkt-b0-FSn"/>
@@ -108,6 +130,7 @@
                     <connections>
                         <outlet property="cameraImage" destination="Yhb-Tp-ECM" id="9Rl-EC-4o4"/>
                         <outlet property="editSwitch" destination="MEJ-ZZ-Viu" id="29T-jJ-TT7"/>
+                        <outlet property="selfieSwitch" destination="ljG-6G-QZB" id="9GA-Os-42P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XH7-5c-xR7" userLabel="First Responder" sceneMemberID="firstResponder"/>

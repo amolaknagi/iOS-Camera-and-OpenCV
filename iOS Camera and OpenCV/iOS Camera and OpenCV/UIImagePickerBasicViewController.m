@@ -13,9 +13,11 @@
 //View Elements
 @property (weak, nonatomic) IBOutlet UIImageView *cameraImage;
 @property (weak, nonatomic) IBOutlet UISwitch *editSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *selfieSwitch;
 
-//Booleans for camera options
+//User camera preferences
 @property (nonatomic) BOOL allowsEditing;
+@property (nonatomic) UIImagePickerControllerCameraDevice cameraDevice;
 
 @end
 
@@ -29,6 +31,7 @@
     
     //Set defaults for camera preferences
     self.allowsEditing = YES;
+    self.cameraDevice = UIImagePickerControllerCameraDeviceFront;
 }
 
 
@@ -68,7 +71,7 @@
 {
     //Create the UIImagePickerController
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-    
+
     
     
     //Assign relevant properties to controller
@@ -80,6 +83,8 @@
     
     //Adjust source type so that user takes image with camera
     imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    imagePickerController.cameraDevice = self.cameraDevice;
     
     
     
@@ -121,12 +126,24 @@
 
 
 
-//Update editing preference when button is pressed
+//Update editing preference when switch is pressed
 - (IBAction)editSwitchPressed:(id)sender
 {
     self.allowsEditing = self.editSwitch.isOn;
 }
 
 
+//Update selfie choice when switch is pressed
+- (IBAction)selfieSwitchPressed:(id)sender
+{
+    if (self.selfieSwitch.isOn)
+    {
+        self.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+    }
+    else
+    {
+        self.cameraDevice = UIImagePickerControllerCameraDeviceRear;
+    }
+}
 
 @end
