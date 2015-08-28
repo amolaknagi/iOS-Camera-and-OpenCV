@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D312DE7A1B90B2A000DB324C /* UIImagePickerBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D312DE791B90B2A000DB324C /* UIImagePickerBasicViewController.m */; };
 		D392F9061B8BE00E009CEC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F9051B8BE00E009CEC7C /* main.m */; };
 		D392F9091B8BE00E009CEC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F9081B8BE00E009CEC7C /* AppDelegate.m */; };
 		D392F90F1B8BE00E009CEC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D392F90D1B8BE00E009CEC7C /* Main.storyboard */; };
 		D392F9111B8BE00E009CEC7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D392F9101B8BE00E009CEC7C /* Images.xcassets */; };
 		D392F9141B8BE00E009CEC7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D392F9121B8BE00E009CEC7C /* LaunchScreen.xib */; };
 		D392F92D1B8BE0A9009CEC7C /* OptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F92C1B8BE0A9009CEC7C /* OptionsTableViewController.m */; };
-		D392F9361B8C1C2E009CEC7C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D392F9291B8BE034009CEC7C /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D312DE781B90B2A000DB324C /* UIImagePickerBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImagePickerBasicViewController.h; sourceTree = "<group>"; };
+		D312DE791B90B2A000DB324C /* UIImagePickerBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerBasicViewController.m; sourceTree = "<group>"; };
 		D392F9001B8BE00E009CEC7C /* iOS Camera and OpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Camera and OpenCV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D392F9041B8BE00E009CEC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "iOS Camera and OpenCV/Info.plist"; sourceTree = SOURCE_ROOT; };
 		D392F9051B8BE00E009CEC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,7 +38,6 @@
 		D392F9101B8BE00E009CEC7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D392F9131B8BE00E009CEC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D392F9191B8BE00E009CEC7C /* iOS Camera and OpenCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Camera and OpenCVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D392F9291B8BE034009CEC7C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../../../OpenCV Files/ios/opencv2.framework"; sourceTree = "<group>"; };
 		D392F92B1B8BE0A9009CEC7C /* OptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableViewController.h; sourceTree = "<group>"; };
 		D392F92C1B8BE0A9009CEC7C /* OptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D392F9361B8C1C2E009CEC7C /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,10 +60,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D312DE7B1B90B2AB00DB324C /* UIImagePickerBasicViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D312DE781B90B2A000DB324C /* UIImagePickerBasicViewController.h */,
+				D312DE791B90B2A000DB324C /* UIImagePickerBasicViewController.m */,
+			);
+			name = UIImagePickerBasicViewController;
+			sourceTree = "<group>";
+		};
+		D312DE7C1B90B2EE00DB324C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D312DE7B1B90B2AB00DB324C /* UIImagePickerBasicViewController */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		D392F8F71B8BE00E009CEC7C = {
 			isa = PBXGroup;
 			children = (
-				D392F9291B8BE034009CEC7C /* opencv2.framework */,
 				D392F9021B8BE00E009CEC7C /* iOS Camera and OpenCV */,
 				D392F9011B8BE00E009CEC7C /* Products */,
 			);
@@ -82,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D392F92E1B8BE0B5009CEC7C /* OptionsTableViewController */,
+				D312DE7C1B90B2EE00DB324C /* Views */,
 				D392F9301B8BE0F0009CEC7C /* Storyboard and Images */,
 				D392F9031B8BE00E009CEC7C /* Supporting Files */,
 				D392F92F1B8BE0BF009CEC7C /* AppDelegate */,
@@ -175,6 +192,7 @@
 				TargetAttributes = {
 					D392F8FF1B8BE00E009CEC7C = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = BYJ7H775Y5;
 					};
 					D392F9181B8BE00E009CEC7C = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -227,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D392F9091B8BE00E009CEC7C /* AppDelegate.m in Sources */,
+				D312DE7A1B90B2A000DB324C /* UIImagePickerBasicViewController.m in Sources */,
 				D392F92D1B8BE0A9009CEC7C /* OptionsTableViewController.m in Sources */,
 				D392F9061B8BE00E009CEC7C /* main.m in Sources */,
 			);
@@ -349,6 +368,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/cmu/Documents/OpenCV,
@@ -356,8 +377,10 @@
 					/Users/cmu/Documents/OpenCV,
 					Files/ios,
 				);
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Camera and OpenCV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -365,6 +388,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/cmu/Documents/OpenCV,
@@ -372,8 +397,10 @@
 					/Users/cmu/Documents/OpenCV,
 					Files/ios,
 				);
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Camera and OpenCV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -381,9 +408,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					/Users/cmu/Documents/OpenCV,
+					Files/ios,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -392,6 +423,7 @@
 				INFOPLIST_FILE = "iOS Camera and OpenCV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Camera and OpenCV.app/iOS Camera and OpenCV";
 			};
 			name = Debug;
@@ -400,13 +432,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					/Users/cmu/Documents/OpenCV,
+					Files/ios,
 				);
 				INFOPLIST_FILE = "iOS Camera and OpenCV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Camera and OpenCV.app/iOS Camera and OpenCV";
 			};
 			name = Release;
