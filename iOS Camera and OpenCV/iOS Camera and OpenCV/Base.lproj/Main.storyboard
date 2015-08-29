@@ -22,11 +22,67 @@
                     <connections>
                         <segue destination="an2-Uy-exe" kind="show" identifier="UIImagePickerController Photos" id="ngE-Bg-nSp"/>
                         <segue destination="Mxh-cb-9Z0" kind="show" identifier="UIImagePickerController Videos" id="9vp-nd-AWu"/>
+                        <segue destination="jVL-td-QE9" kind="show" identifier="OpenCV Basic Image Manipulation" id="H8i-k9-6Xb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWz-Pt-Jrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="798" y="457"/>
+        </scene>
+        <!--OpenCV Basic Image Manipulation-->
+        <scene sceneID="Kdo-0f-2AS">
+            <objects>
+                <viewController id="jVL-td-QE9" customClass="OpenCVBasicImageManipulationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L01-dT-IAR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yix-XW-Pnk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zxw-ta-mWi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nature" translatesAutoresizingMaskIntoConstraints="NO" id="MxU-45-OAN">
+                                <rect key="frame" x="50" y="30" width="500" height="356"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MWN-78-Zhd">
+                                <rect key="frame" x="143" y="446" width="315" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="A4U-Tg-lHa"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="BGR"/>
+                                    <segment title="Gray"/>
+                                    <segment title="HSV"/>
+                                    <segment title="Luv"/>
+                                    <segment title="XYZ"/>
+                                    <segment title="YCC"/>
+                                    <segment title=" L*a*b*"/>
+                                </segments>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="imageTypeControlPressed:" destination="jVL-td-QE9" eventType="valueChanged" id="sTp-AE-ahn"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MxU-45-OAN" firstAttribute="leading" secondItem="Zxw-ta-mWi" secondAttribute="leading" constant="50" id="TSi-Uk-mNk"/>
+                            <constraint firstAttribute="centerX" secondItem="MWN-78-Zhd" secondAttribute="centerX" id="YGx-W6-wN5"/>
+                            <constraint firstItem="MWN-78-Zhd" firstAttribute="top" secondItem="MxU-45-OAN" secondAttribute="bottom" constant="60" id="c3c-as-bUK"/>
+                            <constraint firstAttribute="trailing" secondItem="MxU-45-OAN" secondAttribute="trailing" constant="50" id="nIu-vQ-SU6"/>
+                            <constraint firstItem="Yix-XW-Pnk" firstAttribute="top" secondItem="MxU-45-OAN" secondAttribute="bottom" constant="150" id="pfY-MM-3Rk"/>
+                            <constraint firstItem="MxU-45-OAN" firstAttribute="top" secondItem="L01-dT-IAR" secondAttribute="bottom" constant="30" id="wb2-gj-DMB"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="OpenCV Basic Image Manipulation" id="Jox-OQ-Wym"/>
+                    <connections>
+                        <outlet property="manipulatedImage" destination="MxU-45-OAN" id="OtX-lx-qjt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvR-GI-7aa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1502" y="457"/>
         </scene>
         <!--UIImagePickerController Videos-->
         <scene sceneID="dwu-OB-hWy">
@@ -241,4 +297,7 @@
             <point key="canvasLocation" x="798" y="-406"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Nature" width="900" height="562"/>
+    </resources>
 </document>

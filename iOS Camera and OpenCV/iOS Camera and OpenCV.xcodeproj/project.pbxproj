@@ -11,6 +11,8 @@
 		D312DE7F1B90E4CA00DB324C /* UIImagePickerVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D312DE7E1B90E4CA00DB324C /* UIImagePickerVideosViewController.m */; };
 		D312DE821B90F0EE00DB324C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D312DE811B90F0ED00DB324C /* MobileCoreServices.framework */; };
 		D312DE841B90F0FE00DB324C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D312DE831B90F0FE00DB324C /* opencv2.framework */; };
+		D312DE871B911B5C00DB324C /* OpenCVBasicImageManipulationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D312DE861B911B5C00DB324C /* OpenCVBasicImageManipulationViewController.mm */; };
+		D312DE8E1B9144DA00DB324C /* OpenCVHelpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = D312DE8D1B9144DA00DB324C /* OpenCVHelpers.mm */; };
 		D392F9061B8BE00E009CEC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F9051B8BE00E009CEC7C /* main.m */; };
 		D392F9091B8BE00E009CEC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D392F9081B8BE00E009CEC7C /* AppDelegate.m */; };
 		D392F90F1B8BE00E009CEC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D392F90D1B8BE00E009CEC7C /* Main.storyboard */; };
@@ -36,6 +38,10 @@
 		D312DE7E1B90E4CA00DB324C /* UIImagePickerVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerVideosViewController.m; sourceTree = "<group>"; };
 		D312DE811B90F0ED00DB324C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D312DE831B90F0FE00DB324C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = "../../../OpenCV Files/ios/opencv2.framework"; sourceTree = "<group>"; };
+		D312DE851B911B5C00DB324C /* OpenCVBasicImageManipulationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVBasicImageManipulationViewController.h; sourceTree = "<group>"; };
+		D312DE861B911B5C00DB324C /* OpenCVBasicImageManipulationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVBasicImageManipulationViewController.mm; sourceTree = "<group>"; };
+		D312DE8C1B9144DA00DB324C /* OpenCVHelpers.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OpenCVHelpers.hh; sourceTree = "<group>"; };
+		D312DE8D1B9144DA00DB324C /* OpenCVHelpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVHelpers.mm; sourceTree = "<group>"; };
 		D392F9001B8BE00E009CEC7C /* iOS Camera and OpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Camera and OpenCV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D392F9041B8BE00E009CEC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "iOS Camera and OpenCV/Info.plist"; sourceTree = SOURCE_ROOT; };
 		D392F9051B8BE00E009CEC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,8 +87,11 @@
 		D312DE7C1B90B2EE00DB324C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D312DE8C1B9144DA00DB324C /* OpenCVHelpers.hh */,
+				D312DE8D1B9144DA00DB324C /* OpenCVHelpers.mm */,
 				D312DE7B1B90B2AB00DB324C /* UIImagePickerPhotosViewController */,
 				D312DE801B90E4CF00DB324C /* UIImagePickerVideosViewController */,
+				D312DE881B911B6A00DB324C /* OpenCV Basic Image Manipulation */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -94,6 +103,15 @@
 				D312DE7E1B90E4CA00DB324C /* UIImagePickerVideosViewController.m */,
 			);
 			name = UIImagePickerVideosViewController;
+			sourceTree = "<group>";
+		};
+		D312DE881B911B6A00DB324C /* OpenCV Basic Image Manipulation */ = {
+			isa = PBXGroup;
+			children = (
+				D312DE851B911B5C00DB324C /* OpenCVBasicImageManipulationViewController.h */,
+				D312DE861B911B5C00DB324C /* OpenCVBasicImageManipulationViewController.mm */,
+			);
+			name = "OpenCV Basic Image Manipulation";
 			sourceTree = "<group>";
 		};
 		D392F8F71B8BE00E009CEC7C = {
@@ -265,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D312DE8E1B9144DA00DB324C /* OpenCVHelpers.mm in Sources */,
 				D392F9091B8BE00E009CEC7C /* AppDelegate.m in Sources */,
+				D312DE871B911B5C00DB324C /* OpenCVBasicImageManipulationViewController.mm in Sources */,
 				D312DE7F1B90E4CA00DB324C /* UIImagePickerVideosViewController.m in Sources */,
 				D312DE7A1B90B2A000DB324C /* UIImagePickerPhotosViewController.m in Sources */,
 				D392F92D1B8BE0A9009CEC7C /* OptionsTableViewController.m in Sources */,
@@ -401,6 +421,7 @@
 					/Users/cmu/Documents/OpenCV,
 					Files/ios,
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/iOS Camera and OpenCV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +444,7 @@
 					/Users/cmu/Documents/OpenCV,
 					Files/ios,
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/iOS Camera and OpenCV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
