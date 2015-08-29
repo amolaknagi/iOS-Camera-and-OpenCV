@@ -23,6 +23,7 @@
                         <segue destination="an2-Uy-exe" kind="show" identifier="UIImagePickerController Photos" id="ngE-Bg-nSp"/>
                         <segue destination="Mxh-cb-9Z0" kind="show" identifier="UIImagePickerController Videos" id="9vp-nd-AWu"/>
                         <segue destination="jVL-td-QE9" kind="show" identifier="OpenCV Basic Image Manipulation" id="H8i-k9-6Xb"/>
+                        <segue destination="Yc1-nc-N2u" kind="show" identifier="OpenCV Basic Video Manipulation" id="Fbr-Bt-KPr"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWz-Pt-Jrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,7 +83,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jvR-GI-7aa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1502" y="457"/>
+            <point key="canvasLocation" x="1159" y="1305"/>
+        </scene>
+        <!--OpenCV Basic Video Manipulation-->
+        <scene sceneID="AFK-AA-L9h">
+            <objects>
+                <viewController id="Yc1-nc-N2u" customClass="OpenCVBasicVideoManipulationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ou-lq-2Sj"/>
+                        <viewControllerLayoutGuide type="bottom" id="n1l-k2-EUV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bjb-D7-Mrb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vv5-5Q-bVw">
+                                <rect key="frame" x="50" y="30" width="500" height="356"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cC8-cL-TMI">
+                                <rect key="frame" x="143" y="446" width="315" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="dnk-Gd-Ge2"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="BGR"/>
+                                    <segment title="Gray"/>
+                                    <segment title="HSV"/>
+                                    <segment title="Luv"/>
+                                    <segment title="XYZ"/>
+                                    <segment title="YCC"/>
+                                    <segment title="L*a*b*"/>
+                                </segments>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vv5-5Q-bVw" secondAttribute="trailing" constant="50" id="0SX-bC-DXE"/>
+                            <constraint firstAttribute="centerX" secondItem="cC8-cL-TMI" secondAttribute="centerX" id="Mim-LZ-XkV"/>
+                            <constraint firstItem="Vv5-5Q-bVw" firstAttribute="leading" secondItem="bjb-D7-Mrb" secondAttribute="leading" constant="50" id="NkT-YQ-Fxt"/>
+                            <constraint firstItem="cC8-cL-TMI" firstAttribute="top" secondItem="Vv5-5Q-bVw" secondAttribute="bottom" constant="60" id="ana-5Y-agQ"/>
+                            <constraint firstItem="n1l-k2-EUV" firstAttribute="top" secondItem="Vv5-5Q-bVw" secondAttribute="bottom" constant="150" id="hKk-96-jwT"/>
+                            <constraint firstItem="Vv5-5Q-bVw" firstAttribute="top" secondItem="4Ou-lq-2Sj" secondAttribute="bottom" constant="30" id="hqX-gY-CaD"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="OpenCV Basic Video Manipulation" id="WoK-bl-TsM"/>
+                    <connections>
+                        <outlet property="cameraFeedView" destination="Vv5-5Q-bVw" id="B76-QS-CeE"/>
+                        <outlet property="videoTypeControl" destination="cC8-cL-TMI" id="IAE-f3-eiq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4j-Uy-yF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873" y="1305"/>
         </scene>
         <!--UIImagePickerController Videos-->
         <scene sceneID="dwu-OB-hWy">
@@ -166,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJ3-uZ-Jl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463" y="1315"/>
+            <point key="canvasLocation" x="445" y="1305"/>
         </scene>
         <!--UIImagePickerController Photos-->
         <scene sceneID="zC5-07-Df2">
@@ -276,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XH7-5c-xR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="1315"/>
+            <point key="canvasLocation" x="-245" y="1305"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yly-ay-fZc">

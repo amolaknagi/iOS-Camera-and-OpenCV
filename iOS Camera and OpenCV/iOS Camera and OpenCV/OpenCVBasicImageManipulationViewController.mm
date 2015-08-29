@@ -34,19 +34,18 @@
 {
     UISegmentedControl *imageTypeControl = (UISegmentedControl *)sender;
     
-    //@"BGR" which is original
-    if (imageTypeControl.selectedSegmentIndex == 0)
-    {
-        self.manipulatedImage.image = self.originalImage;
-        return;
-    }
-    
     //Convert original image into mat structure
     cv::Mat matImage = [self cvMatFromUIImage:self.originalImage];
     
     
     switch (imageTypeControl.selectedSegmentIndex)
     {
+        //@"BGR" which is original
+        case 0:
+        {
+            self.manipulatedImage.image = self.originalImage;
+            return;
+        }
         //@"Gray"
         case 1:
         {
@@ -92,40 +91,6 @@
     
     UIImage *finalImage = [self UIImageFromCVMat:matImage];
     self.manipulatedImage.image = finalImage;
-    
-    /*
-    //Perform correct conversion based on user choice
-    //@"Gray"
-    if (imageTypeControl.selectedSegmentIndex == 1)
-    {
-        cv::cvtColor(matImage, matImage, CV_BGR2GRAY);
-    }
-    //@"HSV"
-    else if (imageTypeControl.selectedSegmentIndex == 2)
-    {
-        cv::cvtColor(matImage, matImage, CV_BGR2HSV);
-    }
-    //@"Luv"
-    else if (imageTypeControl.selectedSegmentIndex == 3)
-    {
-        cv::cvtColor(matImage, matImage, CV_BGR2Luv);
-    }
-    //@"XYZ"
-    else if (imageTypeControl.selectedSegmentIndex == 4)
-    {
-        cv::cvtColor(matImage, matImage, CV_BGR2XYZ);
-    }
-    //@"YCrCb"
-    else if (imageTypeControl.selectedSegmentIndex == 5)
-    {
-        cv::cvtColor(matImage, matImage, CV_BGR2YCrCb);
-    }
-    //@"L*a*b*"
-    else if (imageTypeControl.selectedSegmentIndex == 6)
-    {
-        cv::cvt
-    }
-     */
     
 }
 

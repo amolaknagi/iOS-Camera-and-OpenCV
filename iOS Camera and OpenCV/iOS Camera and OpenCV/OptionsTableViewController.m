@@ -28,7 +28,8 @@
     //Make sure the page names match the segue names!!!
     self.pages = @[@"UIImagePickerController Photos",
                    @"UIImagePickerController Videos",
-                   @"OpenCV Basic Image Manipulation"];
+                   @"OpenCV Basic Image Manipulation",
+                   @"OpenCV Basic Video Manipulation"];
 }
 
 
